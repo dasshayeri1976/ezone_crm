@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/ezonecrm"  reloadable="true" crossContext="true">
+  <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource" removeAbandoned="true"
+   removeAbandonedTimeout="30" maxActtive="100" maxIdle="30" maxWait="10"
+  username="root" password="" driverClassName="com.mysql.jdbc.Driver"
+  url="jdbc:mysql://localhost:3306/aimt" /> 
+</Context>
+

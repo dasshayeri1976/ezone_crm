@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!--<definition name="login-success" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to Wireless" />
+		<put-attribute name="body" value="/Body/Dashboard/dasboard.jsp" />
+	</definition>-->
+		
+	<definition name="login-success" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/Dashboard/dashboard.jsp" />
+	</definition>
+	
+	<definition name="callerdashboardlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/Dashboard/pending_detail.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="userlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/user/usercreation.jsp" />
+	</definition>
+		
+	<definition name="calculator" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/calculator/calculator.jsp" />
+	</definition>
+	
+	
+	<definition name="statelist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/State_master.jsp" />
+	</definition>
+	
+	<definition name="districtlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/District_master.jsp" />
+	</definition> 
+	
+	<definition name="citylist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/City_master.jsp" />
+	</definition> 
+		
+	<definition name="branchlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Branch_master.jsp" />
+	</definition>
+	
+	<definition name="companylist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Company_master.jsp" />
+	</definition>	
+	
+	<definition name="engineerlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Engineer_master.jsp" />
+	</definition>
+	
+	<definition name="brandlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Brand_master.jsp" />
+	</definition>
+	
+	<definition name="productlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Product_master.jsp" />
+	</definition>
+
+    <definition name="modellist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Model_master.jsp" />
+	</definition>
+	
+	<definition name="complainlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Complain_master.jsp" />
+	</definition>
+	
+	<definition name="resolvelist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Resolve_master.jsp" />
+	</definition>
+	
+	<definition name="placelist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Place_master.jsp" />
+	</definition>
+	
+	<definition name="transportlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Transport_master.jsp" />
+	</definition>
+	
+	<definition name="sparelist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Spare_master.jsp" />
+	</definition>
+	
+	<definition name="jobworklist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/jobwork_entry.jsp" />
+	</definition>
+	
+	<definition name="englist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_list.jsp" />
+	</definition>
+	
+	<definition name="englistc" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listc.jsp" />
+	</definition>
+	
+	<definition name="englistcp" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcp.jsp" />
+	</definition>
+	
+	<definition name="englistcp1" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcp1.jsp" />
+	</definition>
+	
+	<definition name="englistcem" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcem.jsp" />
+	</definition>
+	
+	<definition name="englistcin" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcin.jsp" />
+	</definition>
+	
+	<definition name="sparereturn" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcem.jsp" />
+	</definition>
+	
+	<definition name="expencereturn" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcem.jsp" />
+	</definition>
+	
+	<definition name="pstatus" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/allocation_listcem.jsp" />
+	</definition>
+	
+	<definition name="pertsreq" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/partsrequired.jsp" />
+	</definition>
+	
+	<definition name="pertsrec" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/partsreceived.jsp" />
+	</definition>
+	
+	<definition name="report" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/report/report.jsp" />
+	</definition>
+	
+	<definition name="sparereturnreport" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/report/sreturn.jsp" />
+	</definition>
+	
+	<definition name="expensereport" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/report/engexpensereport.jsp" />
+	</definition>
+	
+	<!-- Added by Nilesh -->
+	<definition name="routelist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Route_master.jsp" />
+	</definition>
+	
+	<definition name="customerlist" template="/Layout/layout.jsp">  
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Customer_master.jsp" />
+	</definition>
+	
+	<definition name="customerlist1" template="/Layout/layout.jsp">  
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/master/Customer_master.jsp" />
+	</definition>
+	
+	<definition name="quotationlist" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to EZONE-CRM" />
+		<put-attribute name="body" value="/Body/transaction/Quotation_Entry.jsp" />
+	</definition>
+	
+	<definition name="search" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to CSS-CRM" />
+		<put-attribute name="body" value="/Body/report/searchR.jsp" />
+	</definition>
+	
+
+
+
+<definition name="salescrmrequirements" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to AIM Technosoft(Sales-CRM)" />
+		<put-attribute name="body" value="/Body/Shayeri/salescrmrequirements.jsp" />
+	</definition>
+<definition name="login-success" template="/Layout/layout.jsp">
+		<put-attribute name="title" value="Welcome to AIM Technosoft(Sales-CRM)" />
+		<put-attribute name="body" value="/Body/Shayeri/salescrmservices.jsp" />
+	</definition>
+
+		
+</tiles-definitions>

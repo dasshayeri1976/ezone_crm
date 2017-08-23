@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<constant name="struts.action.excludePattern" value="/notify,/ImageServlet"/>
+
+<package name="default" extends="tiles-default" namespace="/">
+
+<action name="login"
+  class="com.action.aimt.Login" method="login">
+  <result name="success" type="tiles">login-success</result>
+  <result name="error" >login.jsp</result>  
+</action>
+
+<action name="dashboard"
+  class="com.action.aimt.Login" method="dashboard">
+  <result name="success" type="tiles">login-success</result>  
+</action>
+
+<action name="dashboarddetails"
+  class="com.action.aimt.Login" method="dashboarddetails">
+  <result name="success" type="tiles">login-success</result>  
+</action>
+
+<action name="calculator"
+  class="com.action.aimt.Login" method="calculator">
+  <result name="success" type="tiles">calculator</result>
+</action>
+
+<action name="logout" class="com.action.aimt.Login" method="logout">  
+<result name="success" >login.jsp</result>  
+</action> 
+
+
+<action name="userlist"
+  class="com.action.aimt.Login" method="userlist">
+  <result name="success" type="tiles">userlist</result>
+</action>
+
+<action name="usercreation"
+  class="com.action.aimt.Login" method="usercreation">
+  <result name="success" type="tiles">userlist</result>
+ </action>
+ 
+ <action name="userupdate"
+  class="com.action.aimt.Login" method="userupdate">
+  <result name="success" type="tiles">userlist</result>
+ </action>
+ 
+ <action name="userdelete"
+  class="com.action.aimt.Login" method="userdelete">
+  <result name="success" type="tiles">userlist</result>
+ </action>
+ 
+<action name="branchlist"
+  class="com.action.aimt.Login" method="branchlist">
+  <result name="success" type="tiles">branchlist</result>
+</action>
+
+<action name="branchcreation"
+  class="com.action.aimt.Login" method="branchcreation">
+  <result name="success" type="tiles">branchlist</result>
+ </action>
+ 
+ <action name="branchupdate"
+  class="com.action.aimt.Login" method="branchupdate">
+  <result name="success" type="tiles">branchlist</result>
+ </action>
+ 
+ <action name="branchdelete"
+  class="com.action.aimt.Login" method="branchdelete">
+  <result name="success" type="tiles">branchlist</result>
+ </action>
+ 
+ <action name="statelist"
+  class="com.action.aimt.Login" method="statelist">
+  <result name="success" type="tiles">statelist</result>
+</action>
+
+<action name="statecreation"
+  class="com.action.aimt.Login" method="statecreation">
+  <result name="success" type="tiles">statelist</result>
+ </action>
+ 
+ <action name="stateupdate"
+  class="com.action.aimt.Login" method="stateupdate">
+  <result name="success" type="tiles">statelist</result>
+ </action>
+ 
+ <action name="statedelete"
+  class="com.action.aimt.Login" method="statedelete">
+  <result name="success" type="tiles">statelist</result>
+ </action>
+
+<action name="districtlist"
+  class="com.action.aimt.Login" method="districtlist">
+  <result name="success" type="tiles">districtlist</result>
+</action>
+
+<action name="districtcreation"
+  class="com.action.aimt.Login" method="districtcreation">
+  <result name="success" type="tiles">districtlist</result>
+ </action>
+ 
+ <action name="districtupdate"
+  class="com.action.aimt.Login" method="districtupdate">
+  <result name="success" type="tiles">districtlist</result>
+ </action>
+ 
+ <action name="districtdelete"
+  class="com.action.aimt.Login" method="districtdelete">
+  <result name="success" type="tiles">districtlist</result>
+ </action>
+
+<action name="citylist"
+  class="com.action.aimt.Login" method="citylist">
+  <result name="success" type="tiles">citylist</result>
+</action>
+
+<action name="citycreation"
+  class="com.action.aimt.Login" method="citycreation">
+  <result name="success" type="tiles">citylist</result>
+ </action>
+ 
+ <action name="cityupdate"
+  class="com.action.aimt.Login" method="cityupdate">
+  <result name="success" type="tiles">citylist</result>
+ </action>
+ 
+ <action name="citydelete"
+  class="com.action.aimt.Login" method="citydelete">
+  <result name="success" type="tiles">citylist</result>
+ </action>
+ 
+ <action name="companylist"
+  class="com.action.aimt.Login" method="companylist">
+  <result name="success" type="tiles">companylist</result>
+</action>
+
+<action name="companycreation"
+  class="com.action.aimt.Login" method="companycreation">
+  <result name="success" type="tiles">companylist</result>
+ </action>
+ 
+ <action name="companyupdate"
+  class="com.action.aimt.Login" method="companyupdate">
+  <result name="success" type="tiles">companylist</result>
+ </action>
+ 
+ <action name="companydelete"
+  class="com.action.aimt.Login" method="companydelete">
+  <result name="success" type="tiles">companylist</result>
+ </action>
+ 
+ <action name="engineerlist"
+  class="com.action.aimt.Login" method="engineerlist">
+  <result name="success" type="tiles">engineerlist</result>
+</action>
+
+<action name="engineercreation"
+  class="com.action.aimt.Login" method="engineercreation">
+  <result name="success" type="tiles">engineerlist</result>
+ </action>
+ 
+ <action name="engineerupdate"
+  class="com.action.aimt.Login" method="engineerupdate">
+  <result name="success" type="tiles">engineerlist</result>
+ </action>
+ 
+ <action name="engineerdelete"
+  class="com.action.aimt.Login" method="engineerdelete">
+  <result name="success" type="tiles">engineerlist</result>
+ </action>
+ 
+<action name="brandlist"
+  class="com.action.aimt.Login" method="brandlist">
+  <result name="success" type="tiles">brandlist</result>
+</action>
+
+<action name="brandcreation"
+  class="com.action.aimt.Login" method="brandcreation">
+  <result name="success" type="tiles">brandlist</result>
+ </action>
+ 
+ <action name="brandupdate"
+  class="com.action.aimt.Login" method="brandupdate">
+  <result name="success" type="tiles">brandlist</result>
+ </action>
+ 
+ <action name="branddelete"
+  class="com.action.aimt.Login" method="branddelete">
+  <result name="success" type="tiles">brandlist</result>
+ </action>
+  
+  
+<action name="productlist"
+  class="com.action.aimt.Login" method="productlist">
+  <result name="success" type="tiles">productlist</result>
+</action>
+
+<action name="productcreation"
+  class="com.action.aimt.Login" method="productcreation">
+  <result name="success" type="tiles">productlist</result>
+ </action>
+ 
+ <action name="productupdate"
+  class="com.action.aimt.Login" method="productupdate">
+  <result name="success" type="tiles">productlist</result>
+ </action>
+ 
+ <action name="productdelete"
+  class="com.action.aimt.Login" method="productdelete">
+  <result name="success" type="tiles">productlist</result>
+ </action>
+  
+<action name="modellist"
+  class="com.action.aimt.Login" method="modellist">
+  <result name="success" type="tiles">modellist</result>
+</action>
+
+<action name="modelcreation"
+  class="com.action.aimt.Login" method="modelcreation">
+  <result name="success" type="tiles">modellist</result>
+ </action>
+ 
+ <action name="modelupdate"
+  class="com.action.aimt.Login" method="modelupdate">
+  <result name="success" type="tiles">modellist</result>
+ </action>
+ 
+ <action name="modeldelete"
+  class="com.action.aimt.Login" method="modeldelete">
+  <result name="success" type="tiles">modellist</result>
+ </action>
+
+<action name="complainlist"
+  class="com.action.aimt.Login" method="complainlist">
+  <result name="success" type="tiles">complainlist</result>
+</action>
+
+<action name="complaincreation"
+  class="com.action.aimt.Login" method="complaincreation">
+  <result name="success" type="tiles">complainlist</result>
+ </action>
+ 
+ <action name="complainupdate"
+  class="com.action.aimt.Login" method="complainupdate">
+  <result name="success" type="tiles">complainlist</result>
+ </action>
+ 
+ <action name="complaindelete"
+  class="com.action.aimt.Login" method="complaindelete">
+  <result name="success" type="tiles">complainlist</result>
+ </action>
+  
+ <action name="resolvelist"
+  class="com.action.aimt.Login" method="resolvelist">
+  <result name="success" type="tiles">resolvelist</result>
+</action>
+
+<action name="resolvecreation"
+  class="com.action.aimt.Login" method="resolvecreation">
+  <result name="success" type="tiles">resolvelist</result>
+ </action>
+ 
+ <action name="resolveupdate"
+  class="com.action.aimt.Login" method="resolveupdate">
+  <result name="success" type="tiles">resolvelist</result>
+ </action>
+ 
+ <action name="resolvedelete"
+  class="com.action.aimt.Login" method="resolvedelete">
+  <result name="success" type="tiles">resolvelist</result>
+ </action>
+ 
+ <action name="placelist"
+  class="com.action.aimt.Login" method="placelist">
+  <result name="success" type="tiles">placelist</result>
+</action>
+
+<action name="placecreation"
+  class="com.action.aimt.Login" method="placecreation">
+  <result name="success" type="tiles">placelist</result>
+ </action>
+ 
+ <action name="placeupdate"
+  class="com.action.aimt.Login" method="placeupdate">
+  <result name="success" type="tiles">placelist</result>
+ </action>
+ 
+ <action name="placedelete"
+  class="com.action.aimt.Login" method="placedelete">
+  <result name="success" type="tiles">placelist</result>
+ </action>
+ 
+ <action name="transportlist"
+  class="com.action.aimt.Login" method="transportlist">
+  <result name="success" type="tiles">transportlist</result>
+</action>
+
+<action name="transportcreation"
+  class="com.action.aimt.Login" method="transportcreation">
+  <result name="success" type="tiles">transportlist</result>
+ </action>
+ 
+ <action name="transportupdate"
+  class="com.action.aimt.Login" method="transportupdate">
+  <result name="success" type="tiles">transportlist</result>
+ </action>
+ 
+ <action name="transportdelete"
+  class="com.action.aimt.Login" method="transportdelete">
+  <result name="success" type="tiles">transportlist</result>
+ </action>
+
+ <action name="sparelist"
+  class="com.action.aimt.Login" method="sparelist">
+  <result name="success" type="tiles">sparelist</result>
+</action>
+
+<action name="sparecreation"
+  class="com.action.aimt.Login" method="sparecreation">
+  <result name="success" type="tiles">sparelist</result>
+ </action>
+ 
+ <action name="spareupdate"
+  class="com.action.aimt.Login" method="spareupdate">
+  <result name="success" type="tiles">sparelist</result>
+ </action>
+ 
+ <action name="sparedelete"
+  class="com.action.aimt.Login" method="sparedelete">
+  <result name="success" type="tiles">sparelist</result>
+ </action>
+
+ <action name="jobworklist"
+  class="com.action.aimt.Login" method="jobworklist">
+  <result name="success" type="tiles">jobworklist</result>
+</action>
+
+<action name="jobworkcreation"
+  class="com.action.aimt.Login" method="jobworkcreation">
+  <result name="success" type="tiles">jobworklist</result>
+ </action>
+ 
+ <action name="jobworkupdate"
+  class="com.action.aimt.Login" method="jobworkupdate">
+  <result name="success" type="tiles">jobworklist</result>
+ </action>
+ 
+ <action name="jobworkdelete"
+  class="com.action.aimt.Login" method="jobworkdelete">
+  <result name="success" type="tiles">jobworklist</result>
+ </action>
+ 
+ <action name="jobworkupdate1"
+  class="com.action.aimt.Login" method="jobworkupdate1">
+  <result name="success" type="tiles">englist</result>
+ </action>
+ 
+ <action name="jobworkcreation1"
+  class="com.action.aimt.Login" method="jobworkcreation1">
+  <result name="success" type="tiles">englist</result>
+ </action>
+ 
+<action name="englist"
+  class="com.action.aimt.Login" method="englist">
+  <result name="success" type="tiles">englist</result>
+</action>
+
+<action name="engcreationcin"
+  class="com.action.aimt.Login" method="engcreationcin">
+  <result name="success" type="tiles">englist</result>
+</action>
+
+<action name="engcreationcin1"
+  class="com.action.aimt.Login" method="engcreationcin1">
+  <result name="success" type="tiles">englist</result>
+</action>
+
+ <action name="jobworkupdate2"
+  class="com.action.aimt.Login" method="jobworkupdate2">
+  <result name="success" type="tiles">englistc</result>
+ </action>
+ 
+ <action name="jobworkcreation2"
+  class="com.action.aimt.Login" method="jobworkcreation2">
+  <result name="success" type="tiles">englistc</result>
+ </action>
+
+<action name="engcreation"
+  class="com.action.aimt.Login" method="engcreation">
+  <result name="success" type="tiles">englistc</result>
+</action>
+
+<action name="englistc"
+  class="com.action.aimt.Login" method="englistc">
+  <result name="success" type="tiles">englistc</result>
+</action>
+
+<action name="engcreation"
+  class="com.action.aimt.Login" method="engcreation">
+  <result name="success" type="tiles">englistc</result>
+</action>
+
+<action name="engcreation1"
+  class="com.action.aimt.Login" method="engcreation1">
+  <result name="success" type="tiles">englistc</result>
+</action>
+
+<action name="englistcp"
+  class="com.action.aimt.Login" method="englistcp">
+  <result name="success" type="tiles">englistcp</result>
+</action>
+
+<action name="englistcp1"
+  class="com.action.aimt.Login" method="englistcp1">
+  <result name="success" type="tiles">englistcp1</result>
+</action>
+
+<action name="printview"
+  class="com.action.aimt.Login" method="printview">
+  <result name="success">printview.jsp</result>
+</action>
+
+<action name="printview1"
+  class="com.action.aimt.Login" method="printview1">
+  <result name="success">printview1.jsp</result>
+</action>
+
+<action name="englistcem"
+  class="com.action.aimt.Login" method="englistcem">
+  <result name="success" type="tiles">englistcem</result>
+</action>
+
+<action name="englistcin"
+  class="com.action.aimt.Login" method="englistcin">
+  <result name="success" type="tiles">englistcin</result>
+</action>
+
+<action name="sparereturn"
+  class="com.action.aimt.Login" method="sparereturn">
+  <result name="success" type="tiles">englistcem</result>
+</action>
+
+<action name="sparereturn1"
+  class="com.action.aimt.Login" method="sparereturn1">
+  <result name="success" type="tiles">englistcin</result>
+</action>
+
+<action name="expencereturn"
+  class="com.action.aimt.Login" method="expencereturn">
+  <result name="success" type="tiles">expencereturn</result>
+</action>
+
+<action name="pstatus"
+  class="com.action.aimt.Login" method="pstatus">
+  <result name="success" type="tiles">englistcem</result>
+</action>
+
+<action name="pstatus1"
+  class="com.action.aimt.Login" method="pstatus1">
+  <result name="success" type="tiles">englistcin</result>
+</action>
+
+<action name="pertsreq"
+  class="com.action.aimt.Login" method="pertsreq">
+  <result name="success" type="tiles">pertsreq</result>
+</action>
+
+<action name="pertsrec"
+  class="com.action.aimt.Login" method="pertsrec">
+  <result name="success" type="tiles">pertsrec</result>
+</action>
+
+<action name="callerdashboardlist"
+  class="com.action.aimt.Login" method="callerdashboardlist">
+  <result name="success" type="tiles">callerdashboardlist</result>
+</action>
+
+<action name="callerdashboardlist1"
+  class="com.action.aimt.Login" method="callerdashboardlist1">
+  <result name="success" type="tiles">callerdashboardlist</result>
+</action>
+
+<action name="callerdashboardlist2"
+  class="com.action.aimt.Login" method="callerdashboardlist2">
+  <result name="success" type="tiles">callerdashboardlist</result>
+</action>
+
+<action name="callerdashboardlist0"
+  class="com.action.aimt.Login" method="callerdashboardlist0">
+  <result name="success" type="tiles">callerdashboardlist</result>
+</action>
+
+<action name="report"
+  class="com.action.aimt.Login" method="report">
+  <result name="success" type="tiles">report</result>
+</action>
+
+<action name="reportdetails"
+  class="com.action.aimt.Login" method="reportdetails">
+  <result name="success" type="tiles">report</result>
+</action>
+
+<action name="sparereturnreport"
+  class="com.action.aimt.Login" method="sparereturnreport">
+  <result name="success" type="tiles">sparereturnreport</result>
+</action>
+
+<action name="sparereturndetails"
+  class="com.action.aimt.Login" method="sparereturndetails">
+  <result name="success" type="tiles">sparereturnreport</result>
+</action>
+
+
+<action name="expensereport"
+  class="com.action.aimt.Login" method="expensereport">
+  <result name="success" type="tiles">expensereport</result>
+</action>
+
+<action name="engexpensedetails"
+  class="com.action.aimt.Login" method="engexpensedetails">
+  <result name="success" type="tiles">expensereport</result>
+</action>
+
+<!-- added by Nilesh -->
+<action name="routecreation"
+  class="com.action.aimt.Login" method="routecreation">
+  <result name="success" type="tiles">routelist</result>
+</action>
+
+<action name="routelistdialog" class="com.action.aimt.Login" method="routelistdialog">
+	<result name="success" type="tiles">englistcem</result>
+</action>
+
+<action name="routelist"
+  class="com.action.aimt.Login" method="routelist">
+  <result name="success" type="tiles">routelist</result>
+</action>
+
+<action name="routeupdate"
+  class="com.action.aimt.Login" method="routeupdate">
+  <result name="success" type="tiles">routelist</result>
+</action>
+
+<action name="routedelete"
+  class="com.action.aimt.Login" method="routedelete">
+  <result name="success" type="tiles">routelist</result>
+</action>
+
+<!-- added by Nilesh -->
+
+<action name="customerlist"
+  class="com.action.aimt.Login" method="customerlist">
+  <result name="success" type="tiles">customerlist</result>
+</action>
+<action name="customerlist1"
+  class="com.action.aimt.Login" method="customerlist1">
+  <result name="success" type="tiles">customerlist</result>
+</action>
+
+<action name="customercreation"
+  class="com.action.aimt.Login" method="customercreation">
+  <result name="success" type="tiles">customerlist</result>
+</action>
+
+<action name="customerupdate"
+  class="com.action.aimt.Login" method="customerupdate">
+  <result name="success" type="tiles">customerlist</result>
+</action>
+
+<action name="customerdelete"
+  class="com.action.aimt.Login" method="customerdelete">
+  <result name="success" type="tiles">routelist</result>
+</action>
+
+<!-- added by Nilesh 17th March -->
+<action name="quotationlist"
+  class="com.action.aimt.Login" method="quotationlist">
+  <result name="success" type="tiles">quotationlist</result>
+</action>
+
+<action name="quotationcreation"
+  class="com.action.aimt.Login" method="quotationcreation">
+  <result name="success" type="tiles">quotationlist</result>
+</action>
+
+<action name="quotationupdate"
+  class="com.action.aimt.Login" method="quotationupdate">
+  <result name="success" type="tiles">quotationlist</result>
+</action>
+
+<action name="quotationdelete"
+  class="com.action.aimt.Login" method="quotationdelete">
+  <result name="success" type="tiles">quotationlist</result>
+</action>
+
+
+<!-- added by Nilesh, 28th March -->
+<action name="quotationdetails"
+  class="com.action.aimt.Login" method="quotationdetails">
+  <result name="success" type="tiles">quotationlist</result>
+</action>
+
+
+<action name="search"
+  class="com.action.aimt.Login" method="search">
+  <result name="success" type="tiles">search</result>
+</action>
+
+<action name="searchr"
+  class="com.action.aimt.Login" method="searchr">
+  <result name="success" type="tiles">search</result>
+</action>
+  
+<action name="salescrmserviceslist"
+  class="com.action.aimt.Login" method="salescrmserviceslist">
+  <result name="success" type="tiles">salescrmserviceslist</result>
+</action>
+
+ <action name="salescrmservicescreation"
+  class="com.action.aimt.Login" method="salescrmservicescreation">
+  <result name="success" type="tiles">salescrmserviceslist</result>
+ </action>
+ <action name="salescrmservicesupdate"
+  class="com.action.aimt.Login" method="salescrmservicesupdate">
+  <result name="success" type="tiles">salescrmserviceslist</result>
+ </action>
+ <action name="salescrmservicesdelete"
+  class="com.action.aimt.Login" method="salescrmservicesdelete">
+  <result name="success" type="tiles">salescrmserviceslist</result>
+ </action>
+
+</package>
+</struts>
